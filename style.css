@@ -1,0 +1,410 @@
+/*
+Theme Name: Maerquin_Alexandra
+Theme URI:
+Author: Alexjuh
+Author URI: https://github.com/alexjuh
+Description:  Wordpress Theme build for R.S.V. Maerquin
+Version: 1.0
+Tags: right-sidebar, brown, white, header, slider, brand
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Header
+# Navigation
+	## Normal
+	## Tablet/mobile
+# Content
+# Sidebar
+# Footer
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body{
+	background-image: url("img/achtergrond.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+
+.row{
+	margin: 0px;
+}
+
+.col-md-5{
+	background-color: #FFF;
+}
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+a{
+	color: #db860f;
+	text-decoration: underline;
+}
+
+h1{
+	font-size: 36px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-weight: 500;
+	line-height: 1.1;
+		color: #333;
+}
+
+h2{
+	background-color: #683c11;
+	color: #FFF;
+	padding: 2px;
+	font-size: 30px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+h3{
+	text-decoration: underline;
+	margin-bottom: 0;
+	font-size: 18px;
+	color: #333;
+}
+
+h4{
+	text-decoration: underline;
+	margin-bottom: 0;
+	font-size: 18px;
+	color: #333;
+}
+
+p{
+
+}
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+
+p:empty{
+	display: none;
+}
+
+#main li{
+	list-style: none;
+}
+
+hr{
+	border-top: 1px solid #683c11 ;
+	padding-bottom: 20px;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+.top-header{
+	padding: 3px;
+}
+
+.top-header > img{
+	margin: auto;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Normal
+--------------------------------------------------------------*/
+
+nav.navbar.navbar-default.megamenu{
+	margin: 0;
+}
+
+#main-navbar{
+	max-width: 100%;
+	margin: 0;
+}
+
+nav{
+	background: #FFFFFF;
+	padding: 5px;
+}
+
+#main-navbar ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	text-align: center;
+}
+
+#main-navbar li{
+	display: inline-block;
+	background: #FFFFFF;
+}
+
+#main-navbar a{
+	color: #683c11;
+	text-decoration: none;
+	display: block;
+	font-size: 16px;
+}
+
+#main-navbar > ul > li > a{
+	padding: 15px;
+}
+
+#main-navbar > ul > li > a:hover{
+	padding: 15px;
+}
+
+#main-navbar li a:hover {
+	color: #683c11;
+}
+
+#main-navbar li:hover{
+	background: #e5e5e5;
+}
+
+.mega-menu{
+	position: absolute;
+	background: #ffffff;
+	border-left: 3px solid #683c11;
+	border-bottom: 3px solid #683c11;
+	width: auto;
+	min-width: 35%;
+	display: none;
+	z-index: 1001;
+	padding: 15px;
+}
+
+.mega-menu li{
+	text-align: left;
+}
+
+#main-navbar li:hover .mega-menu{
+	display: block;
+}
+
+#main-navbar .sub-menu li{
+	display: block;
+	background-color: #FFFFFF;
+	text-decoration: underline;
+	padding-left: 5px;
+}
+
+#main-navbar .sub-menu li:hover{
+	background-color: #e5e5e5;
+}
+
+div[class*='-container']{
+	float: left;
+}
+
+div[class*='-container']{
+	width: auto;
+	width: 33%;
+}
+
+.menu a{
+	padding: 5px;
+}
+
+#main-navbar .menu:last-of-type{
+	padding-right: 20px;
+}
+
+#spelwereld > a{
+	border-left: 3px solid #FFFFFF;
+	border-right: 3px solid #FFFFFF;
+}
+
+#spelwereld > a:hover{
+	border-left: 3px solid #683c11;
+	border-right: 3px solid #683c11;
+}
+
+#main-navbar .active{
+	background-color: #683c11;
+	color: #e5e5e5;
+}
+
+#main-navbar .active:hover {
+	background-color: #e5e5e5;
+	color: #683c11;
+}
+
+/*--------------------------------------------------------------
+## Tablet/mobile
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px){
+
+	body{
+		max-width: 100%;
+	}
+
+	nav{
+		background: #FFF;
+		padding: 5px;
+	}
+
+	#main-navbar ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-align: left;
+	}
+
+	#main-navbar li{
+		padding: 0;
+		background: #FFF;
+		min-width: 100%;
+	}
+
+	#main-navbar a{
+		color: #683c11;
+		text-decoration: none;
+		display: block;
+		font-size: 16px;
+		/*opmaak van de text*/
+	}
+
+	#main-navbar > ul > li > a{
+		padding: 15px;
+		/*opmaak van de text*/
+	}
+
+	.mega-menu{
+		position: relative;
+		border-left: none;
+		border-bottom: none;
+		width: auto;
+		display: inline-block;
+		z-index: 1001;
+		padding: 0;
+		min-width: 100%;
+	}
+
+	.mega-menu li{
+		text-align: left;
+	}
+
+	#main-navbar .sub-menu li{
+		display: block;
+		background-color: #dddddd;
+		text-decoration: underline;
+		padding-left: 5px;
+	}
+
+	div[class*='-container']{
+		float: none;
+	}
+
+	div[class*='-container']{
+		width: auto;
+	}
+
+	.menu a{
+		padding: 5px;
+		background-color: #dddddd;
+	}
+
+	#main-navbar .menu:last-of-type{
+		padding-right: 0;
+	}
+
+	#spelwereld > a{
+		border-left: none;
+		border-right: none;
+	}
+}
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+
+#main {
+	background-color: #FFFFFF;
+	display: block;
+	height: 100%;
+}
+
+#main p{
+	padding-bottom: 20px;
+}
+
+/*--------------------------------------------------------------
+# Sidebar
+--------------------------------------------------------------*/
+
+.widget{
+	background-color: #683c11;
+	padding: 10px 5px 10px 5px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	height: auto;
+}
+
+.widget-title {
+	text-decoration: underline;
+	margin-bottom: 0;
+	font-size: 18px;
+	color: #FFF;
+	font-weight: 500;
+	padding-bottom: 10px;
+}
+
+.search-field{
+	margin-bottom: 10px;
+	padding: 3px;
+}
+
+.short-div li{
+	list-style: none;
+}
+
+.short-div {
+	color: #FFF;
+}
+
+.screen-reader-text{
+	display: none;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+.wrapper{
+	position: relative;
+	max-height: 100%;
+}
+
+footer{
+	background-color: #683c11;
+	color: #FFF;
+	text-align: center;
+	width: 100%;
+	bottom: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 0;
+	position: relative;
+}
